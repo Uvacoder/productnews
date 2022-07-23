@@ -1,0 +1,43 @@
+:root {
+    --primary: #fedb8b;
+    --secondary: #173854;
+    --black: #444;
+}
+
+body {
+    font-family: "Newsreader", Merriweather,Georgia,serif;
+}
+
+a, a:visited {
+    color: var(--secondary);
+}
+
+a:hover {
+    color: #3498db;
+}
+
+h1 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+h1 + p {
+    margin-top: -2rem !important;
+}
+
+hr {
+    padding: 0 !important;
+    opacity: 0.2;
+}
+
+@media only screen and (min-width: 600px) {
+    .list-container {
+        display: grid;
+        grid-template-columns: 1.3fr 3fr 1.3fr;
+    }
+
+    .list-container > aside {
+        margin-left: 2rem;
+        margin-top: 2.6rem;
+    } 
+}
